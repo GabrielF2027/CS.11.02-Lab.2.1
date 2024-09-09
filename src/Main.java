@@ -1,10 +1,11 @@
 /**
 *****************************************************************************************************
-* By writing your name in the space provided below, you are honouring the CIS academic honesty pledge 
+* By writing your name in the space provided below, you are honouring the CIS academic honesty pledge
 * “I have neither given nor received unauthorized aid on this piece of work.”
 * NAME: Gabriel
 *****************************************************************************************************
 */
+
 
 public class Main {
 
@@ -37,7 +38,7 @@ public class Main {
         afternoonGreeting = afternoonGreeting(name);
         System.out.println(afternoonGreeting);
 
-        triple = "hello";
+        triple = triple("hello");
         System.out.println(triple);
 
         half = half(a);
@@ -61,25 +62,27 @@ public class Main {
     }
     // 3. morningGreeting
     public static String morningGreeting(String name) {
-        return "Good morning" + name;
+        return "Good morning, " + name;
     }
     // 4. afternoonGreeting
     public static String afternoonGreeting(String name) {
-        return "Good afternoon" + name;
+        return "Good afternoon, " + name;
     }
 
     // 5. triple
     public static String triple(String triple) {
+        String str = "";
         for(int i = 0; i < 3; i++) {
-            triple += triple;
+            str += triple;
         }
-        return triple;
+        return str;
     }
 
     // 6. half
     public static double half(int a) {
         return (double) a/2;
     }
+    
     // 7. roundPositiveValueToNearestInteger
     public static int roundPositiveValueToNearestInteger(double decimal) {
         return (int) (decimal + 0.5);
